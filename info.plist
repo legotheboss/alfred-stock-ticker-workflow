@@ -98,12 +98,10 @@ Example 2: $TSLA will result in the quote for Tesla Inc.</string>
 	<key>variables</key>
 	<dict>
 		<key>IEX_API</key>
-		<string>pk_68869c1fe6ca4f46a416dd582f462c6b</string>
+		<string>DEFAULT</string>
 	</dict>
 	<key>variablesdontexport</key>
-	<array>
-		<string>IEX_API</string>
-	</array>
+	<array/>
 	<key>version</key>
 	<string>1.0</string>
 	<key>webaddress</key>
