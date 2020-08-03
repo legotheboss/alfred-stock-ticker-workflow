@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.amruthpabba.stocks</string>
+	<key>connections</key>
+	<dict>
+		<key>9EA5B173-848D-4BD3-BE3F-981BE9857083</key>
+		<array/>
+	</dict>
+	<key>createdby</key>
+	<string>Amruth Pabba</string>
+	<key>description</key>
+	<string>Uses the IEX Cloud API to retrieve the current quote of a US-based equity.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Stock Ticker</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>$</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Checking</string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node index.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>IEX Real Time Data</string>
+				<key>title</key>
+				<string>Enter Stock Ticker</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>9EA5B173-848D-4BD3-BE3F-981BE9857083</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>README!!!! INSTRUCTIONS HERE!!!
+
+This is a basic Alfred Workflow that uses the IEX Cloud API to retrieve the latest stock prices.
+
+To setup:
+
+Go to: https://iexcloud.io/ and setup a free-tier account. Once your account is setup, you will have access to an API token to use. Copy your API token and set it up as the IEX_API key value, for the Environment Variables. The Environment Variables should be available to the left.
+
+Once this is set, your stock tickers will be ready to be displayed.
+
+The format for Alfred to get you your stock quote is:
+$SMBL.
+
+Example 1: $AAPL will result in the quote for Apple Inc.
+Example 2: $TSLA will result in the quote for Tesla Inc.</string>
+	<key>uidata</key>
+	<dict>
+		<key>9EA5B173-848D-4BD3-BE3F-981BE9857083</key>
+		<dict>
+			<key>xpos</key>
+			<integer>260</integer>
+			<key>ypos</key>
+			<integer>185</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>IEX_API</key>
+		<string>pk_68869c1fe6ca4f46a416dd582f462c6b</string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>IEX_API</string>
+	</array>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>https://amruth.io</string>
+</dict>
+</plist>

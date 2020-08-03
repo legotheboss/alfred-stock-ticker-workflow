@@ -1,0 +1,25 @@
+{
+  "name": "alfred-stock-ticker-workflow",
+  "version": "1.0.0",
+  "description": "Uses the IEX API to retrieve the current price of a stock",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Amruth Pabba",
+		"email": "quickpi@icloud.com",
+		"url": "http://amruth.io/"
+  },
+  "files": [
+    "index.js",
+    "info.plist"
+  ],
+  "dependencies": {
+    "alfy": "*"
+  },
+  "scripts": {
+		"postinstall": "alfy-init",
+		"preuninstall": "alfy-cleanup"
+	}
+}
